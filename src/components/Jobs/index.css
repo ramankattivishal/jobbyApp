@@ -1,0 +1,153 @@
+.jobs-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.jobs-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1140px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 100px;
+  }
+}
+
+.search-input-job-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-job-container {
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 40px;
+    margin-top: 28px;
+  }
+}
+
+.search-input-desktop-container {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  background-color: transparent;
+  border: 1px solid #7e858e;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  .search-input-desktop-container {
+    display: none;
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-grow: 1;
+}
+@media screen and (max-width: 767px) {
+  .loader-container {
+    width: 100%;
+  }
+}
+
+.no-jobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  padding-bottom: 64px;
+  flex-grow: 1;
+}
+
+.no-jobs-img {
+  width: 250px;
+  height: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-img {
+    width: 450px;
+    height: 300px;
+  }
+
+  .no-jobs-container {
+    margin-top: 78px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+}
+
+.no-jobs-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-heading {
+    font-size: 32px;
+  }
+}
+
+.no-jobs-description {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-description {
+    font-size: 14px;
+  }
+}
+
+.failure-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 28px;
+  padding: 10px 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.all-jobs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.jobs-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
